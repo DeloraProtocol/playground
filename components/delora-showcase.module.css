@@ -90,17 +90,7 @@
 
 .widgetFrame {
   width: min(100%, 633px);
-}
-
-.widgetFallback {
-  width: min(100%, 633px);
   min-height: 640px;
-  display: grid;
-  place-items: center;
-  border-radius: 32px;
-  border: 1px solid var(--panel-border);
-  background: var(--panel-background);
-  color: inherit;
 }
 
 @media (max-width: 640px) {

@@ -27,26 +27,39 @@ const themeOptions: Array<{ label: string; value: ThemeMode }> = [
 
 export function DeloraShowcase() {
   const [theme, setTheme] = useState<ThemeMode>("dark");
+  const logoSrc = theme === "dark" ? "/logo-light.svg" : "/logo-dark.svg";
 
   return (
     <div className={styles.shell} data-theme={theme}>
       <header className={styles.header}>
-        <div className={styles.themeSwitch} aria-label="Theme switch">
-          {themeOptions.map((option) => {
-            const selected = theme === option.value;
+        <div className={styles.headerInner}>
+          <div className={styles.brand}>
+            <img
+              src={logoSrc}
+              alt="Delora"
+              width={613}
+              height={184}
+              className={styles.logo}
+            />
+          </div>
 
-            return (
-              <button
-                key={option.value}
-                type="button"
-                className={selected ? styles.themeButtonActive : styles.themeButton}
-                onClick={() => setTheme(option.value)}
-                aria-pressed={selected}
-              >
-                {option.label}
-              </button>
-            );
-          })}
+          <div className={styles.themeSwitch} aria-label="Theme switch">
+            {themeOptions.map((option) => {
+              const selected = theme === option.value;
+
+              return (
+                <button
+                  key={option.value}
+                  type="button"
+                  className={selected ? styles.themeButtonActive : styles.themeButton}
+                  onClick={() => setTheme(option.value)}
+                  aria-pressed={selected}
+                >
+                  {option.label}
+                </button>
+              );
+            })}
+          </div>
         </div>
       </header>
 

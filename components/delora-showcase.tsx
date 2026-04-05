@@ -12,11 +12,7 @@ const TradeWidget = dynamic<TradeWidgetProps>(
   () => import("@deloraprotocol/widget").then((mod) => mod.TradeWidget),
   {
     ssr: false,
-    loading: () => (
-      <div className={styles.widgetFallback}>
-        Loading Delora widget...
-      </div>
-    ),
+    loading: () => null,
   },
 );
 

@@ -21,6 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
+      <head>
+        <title>Delora Playground</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+        />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+      </head>
       <body className={spaceGrotesk.variable}>{children}</body>
     </html>
   );

@@ -66,7 +66,7 @@ export function DeloraShowcase() {
             config={{
               apiUrl: "https://api.delora.build",
               integrator: "delora",
-              fee: 0.0015,
+              fee: 0.0001,
             }}
           />
         </div>

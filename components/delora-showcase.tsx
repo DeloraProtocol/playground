@@ -17,8 +17,8 @@ const TradeWidget = dynamic<TradeWidgetProps>(
 );
 
 const themeOptions: Array<{ label: string; value: ThemeMode }> = [
-  { label: "White", value: "light" },
-  { label: "Black", value: "dark" },
+  { label: "Light", value: "light" },
+  { label: "Dark", value: "dark" },
 ];
 
 export function DeloraShowcase() {
@@ -67,6 +67,7 @@ export function DeloraShowcase() {
               apiUrl: "https://api.delora.build",
               integrator: "delora",
               fee: 0.0015,
+              walletConnectProjectId: "2c1dd4da55a8dcb740a7123ad74d655b"
             }}
           />
         </div>

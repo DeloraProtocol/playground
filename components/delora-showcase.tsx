@@ -65,8 +65,8 @@ export function DeloraShowcase() {
             theme={theme}
             config={{
               apiUrl: "https://api.delora.build",
-              // integrator: "delora",
-              // fee: 0.0001,
+              integrator: "delora",
+              fee: 0.0001,
               walletConnectProjectId: "2c1dd4da55a8dcb740a7123ad74d655b"
             }}
           />

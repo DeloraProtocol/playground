@@ -67,7 +67,9 @@ export function DeloraShowcase() {
               apiUrl: "https://api.delora.build",
               integrator: "delora",
               fee: 0.0001,
-              walletConnectProjectId: "2c1dd4da55a8dcb740a7123ad74d655b"
+              walletConnectProjectId: "2c1dd4da55a8dcb740a7123ad74d655b",
+              termsUrl: "https://delora.build/terms-of-service",
+              privacyPolicyUrl: "https://delora.build/privacy-notice",
             }}
           />
         </div>
